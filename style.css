@@ -23,7 +23,8 @@
   );
   
   
-  --primary: #ffd901;
+  --primary:  #39FF14 ;
+\**#ffd901;**\
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
