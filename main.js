@@ -116,3 +116,15 @@ document.documentElement.style.setProperty('--primary', localStorage.getItem('co
 
 //Disable Context Menu Chrome
 window.oncontextmenu = function() { return false; }
+
+const redirectLoader = document.getElementById('redirectLoader');
+
+// Function to redirect to index.html after 4 seconds
+function redirectToIndex() {
+  setTimeout( () => {
+    window.location.href = 'index.html';
+  }, 4000); // 3000 milliseconds = 3 seconds
+}
+
+// Call the redirectToIndex function when the page has loaded
+window.addEventListener('load', redirectToIndex);
