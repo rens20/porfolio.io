@@ -24,7 +24,6 @@
   
   
   --primary:  #39FF14 ;
-\**#ffd901;**\
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
@@ -906,12 +905,40 @@ main {
   0% { transform: scale(0.5); }
   100% { transform: scale(1); }
 }
+/********WASIE*********/
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    text-align: center;
+    margin: 0 20px; /* Adjust this margin as needed to separate the images */
+  }
+  .image-wrapper img{
+    max-width: 100%;
+    height: auto;
+  }
+  .image-wrapper .button{
+    margin-top: 10px;
+    background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
 
 .project-item > a { width: 100%; }
 
 .project-img {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 200px;
   border-radius: 16px;
   overflow: hidden;
@@ -923,8 +950,8 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   background: transparent;
   z-index: 1;
   transition: var(--transition-1);
